@@ -42,7 +42,7 @@ function draw() {
 
 document.onkeydown = function (e) {
   if (!car) return;
-  
+
   // TODO
 }
 
@@ -52,7 +52,7 @@ function animLoop() {
   frames++;
 
   draw();
-  
+
   if (!gameover) {
     requestAnimationFrame(animLoop);
   }
@@ -62,7 +62,7 @@ function startGame() {
   if (raf) {
     cancelAnimationFrame(raf);
   }
-  
+
   // TODO
 
   requestAnimationFrame(animLoop);
