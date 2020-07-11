@@ -54,7 +54,7 @@ function animLoop() {
   draw();
 
   if (!gameover) {
-    requestAnimationFrame(animLoop);
+    raf = requestAnimationFrame(animLoop);
   }
 }
 
@@ -65,7 +65,7 @@ function startGame() {
 
   // TODO
 
-  requestAnimationFrame(animLoop);
+  animLoop();
 }
 
 document.getElementById("start-button").onclick = function() {
