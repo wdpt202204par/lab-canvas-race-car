@@ -23,8 +23,20 @@ function draw() {
   ctx.closePath();
 
   ctx.beginPath();
+  ctx.fillStyle = "white";
+  ctx.fillRect(125,0,25,1600);
+  ctx.fill();
+  ctx.closePath();
+
+  ctx.beginPath();
   ctx.fillStyle = "grey";
   ctx.fillRect(150,0,700,1600);
+  ctx.fill();
+  ctx.closePath();
+
+  ctx.beginPath();
+  ctx.fillStyle = "white";
+  ctx.fillRect(850,0,25,1600);
   ctx.fill();
   ctx.closePath();
 
@@ -64,7 +76,7 @@ function draw() {
   //
   // Iteration #4: obstacles
   //
-
+  obstacle.draw()
   // TODO
 
   //
@@ -111,6 +123,7 @@ function startGame() {
   }
 else{
   car=new Car
+  obstacle=new Obstacle
 }
   // TODO
 
