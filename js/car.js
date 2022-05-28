@@ -9,7 +9,7 @@ class Car {
       // TODO
       this.w=100;
       this.h=this.w/imgRatio;
-
+      this.x=450
 
     }
     img.src = "images/car.png";
@@ -18,8 +18,7 @@ class Car {
   draw() {
     if (!this.img) {return}
     else{
-      ctx.drawImage(this.img,450,1300,this.w, this.h);
-      console.log('coucou');
+      ctx.drawImage(this.img,this.x,1300,this.w, this.h);
     }
     // if `this.img` is not loaded yet => don't draw
     
@@ -27,9 +26,9 @@ class Car {
   }
 
   moveLeft() {
-    // TODO
+    this.x-=10
   }
   moveRight() {
-    // TODO
+    this.x +=10
   }
 }

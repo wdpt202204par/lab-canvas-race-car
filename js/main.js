@@ -82,8 +82,14 @@ function draw() {
 }
 
 document.onkeydown = function (e) {
+  console.log("key=",e.key)
   if (!car) return;
-
+  else if(e.key==="ArrowLeft"){
+    car.moveLeft()
+  }
+  else if(e.key==="ArrowRight"){
+    car.moveRight()
+  }
   // TODO
 }
 
