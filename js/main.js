@@ -56,6 +56,7 @@ function draw() {
 
   //
   // Iteration 2: car drawing
+  car.draw()
   //
 
   // TODO
@@ -102,7 +103,9 @@ function startGame() {
   if (raf) {
     cancelAnimationFrame(raf);
   }
-
+else{
+  car=new Car
+}
   // TODO
 
   animLoop();

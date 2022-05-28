@@ -7,13 +7,22 @@ class Car {
       const imgRatio = img.naturalWidth/img.naturalHeight;
 
       // TODO
+      this.w=100;
+      this.h=this.w/imgRatio;
+
+
     }
     img.src = "images/car.png";
   }
 
   draw() {
-    if (!this.img) return; // if `this.img` is not loaded yet => don't draw
-
+    if (!this.img) {return}
+    else{
+      ctx.drawImage(this.img,450,1300,this.w, this.h);
+      console.log('coucou');
+    }
+    // if `this.img` is not loaded yet => don't draw
+    
     // TODO
   }
 
